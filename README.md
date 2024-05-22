@@ -1,4 +1,4 @@
-# Weather App
+Weather App
 
 https://pauljgonzalez.github.io/ODIN-Weather/
 

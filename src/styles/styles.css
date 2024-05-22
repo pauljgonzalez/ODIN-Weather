@@ -121,12 +121,11 @@ button{
     gap: clamp(8px,5%,64px);
     align-items: center;
     justify-content:center;
-    
-   
 }
 .forecast{
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
     gap: 8px;
     text-align: center;
     padding: 5px;
@@ -135,6 +134,7 @@ button{
     border-radius: 16px;
     width: clamp(140px,3vw,400px);
     font-size: clamp(12px,2vw,18px);
+    height: 180px;
 
 }
 .forecast__temperatures{
@@ -144,7 +144,7 @@ button{
 .forecast--weather-icon{
     vertical-align: top;
     object-fit: contain;
-    height: 30%;
+    height: 100%;
     width: auto;
 }
 .forecast__temp{
@@ -210,8 +210,34 @@ button{
     width: 80%;
   }
   .error__container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+   
     visibility: hidden;
   }
+  .ul__container{
+    display: none;
+    position: relative;
+    left: 3%;
+    flex-direction: column;
+    gap: 3px;
+  }
+  .location__auto-search{
+    background-color: white;
+    border-radius: 16px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    text-align: left;
+    list-style-type: none;
+    
+  }
+.auto-search__location{
+    position: relative;
+    right: 6%;
+    padding: 2px;
+    border-bottom: 1px solid gray;
+    cursor: pointer;
+}
+ul{
+    margin: 0px;
+}

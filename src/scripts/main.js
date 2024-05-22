@@ -28,7 +28,7 @@
 // console.log(document.querySelector('.forecast__dayOne'));
 
 import { currentWeather } from './currentWeatherAPI';
-import { searchValue, searchButton } from './domElements';
+import { searchValue, searchButton, errorState } from './domElements';
 import { changeForecast } from './changeForecast';
 
 export const key = 'd317c44b140242988c7140818242005';
@@ -54,6 +54,7 @@ document.querySelector('.input-field').addEventListener('focus', () => {
         currentWeather();
         changeForecast();
         searchValue.value = '';
+        errorState.style.visibility = 'hidden';
       }
     });
 });

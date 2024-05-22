@@ -1,4 +1,4 @@
-import { searchValue, searchButton } from './domElements';
+import { searchValue, searchButton, errorState } from './domElements';
 import { key } from './main';
 import { changeForecast } from './changeForecast';
 import {
@@ -38,6 +38,6 @@ export async function currentWeather() {
     changeCloudCoverage(currentData.current.cloud);
     document.documentElement.style.setProperty('--visible-state', 'visible');
   } catch (error) {
-    alert('Location Not Found');
+    errorState.style.visibility = 'visible';
   }
 }

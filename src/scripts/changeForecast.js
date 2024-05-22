@@ -1,5 +1,5 @@
 import { key } from './main';
-import { searchValue, searchButton } from './domElements';
+import { searchValue, searchButton, errorState } from './domElements';
 import { changeRainChance } from './changeDOM';
 import { changeDay } from './changeForecastDOM';
 
@@ -33,5 +33,6 @@ export async function changeForecast() {
     }
   } catch (error) {
     console.log(error);
+    errorState.style.visibility = 'visible';
   }
 }

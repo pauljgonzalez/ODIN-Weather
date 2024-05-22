@@ -1,3 +1,5 @@
+import '../styles/styles.css';
+
 import { currentWeather } from './currentWeatherAPI';
 import { searchValue, searchButton, errorState } from './domElements';
 import { changeForecast } from './changeForecast';

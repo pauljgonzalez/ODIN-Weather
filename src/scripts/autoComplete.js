@@ -7,7 +7,7 @@ const autoSearchContainer = document.querySelector('.location__auto-search');
 const ulListContainer = document.querySelector('.ul__container');
 export async function autoComplete(search) {
   const response = await fetch(
-    `http://api.weatherapi.com/v1/search.json?key=${key}&q=${search}`,
+    `https://api.weatherapi.com/v1/search.json?key=${key}&q=${search}`,
     { mode: 'cors' },
   );
   const currentData = await response.json();

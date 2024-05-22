@@ -6,7 +6,7 @@ import { changeDay } from './changeForecastDOM';
 export async function changeForecast() {
   try {
     const response = await fetch(
-      `http://api.weatherapi.com/v1/forecast.json?key=${key}&q=${searchValue.value}&days=4`,
+      `https://api.weatherapi.com/v1/forecast.json?key=${key}&q=${searchValue.value}&days=4`,
       { mode: 'cors' },
     );
     const forecastData = await response.json();

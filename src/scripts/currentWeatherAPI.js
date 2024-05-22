@@ -18,7 +18,7 @@ export async function currentWeather() {
   document.documentElement.style.setProperty('--visible-state', 'hidden');
   try {
     const response = await fetch(
-      `http://api.weatherapi.com/v1/current.json?key=${key}&q=${searchValue.value}`,
+      `https://api.weatherapi.com/v1/current.json?key=${key}&q=${searchValue.value}`,
       { mode: 'cors' },
     );
     const currentData = await response.json();
